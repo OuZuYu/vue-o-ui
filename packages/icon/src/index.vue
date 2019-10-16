@@ -3,15 +3,27 @@
 </template>
 
 <script>
+  /**
+   * 图标组件
+   * @displayName OIcon
+   */
   export default {
     name: 'OIcon',
 
     props: {
+      /**
+       * select框的placeholder
+       */
       name: String
     },
 
     methods: {
       handleClick (e) {
+        /**
+         * 点击事件
+         *
+         * @type {function}
+         */
         this.$emit('click', e);
       }
     }
