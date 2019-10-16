@@ -1,11 +1,13 @@
 {
   "name": "vue-o-ui",
   "version": "0.0.3",
-  "description": "基于Vue的ui组件库",
+  "description": "基于 Vue 的 ui组件库",
   "main": "lib/oui.umd.min.js",
   "keyword": "o-ui oui",
   "private": false,
   "scripts": {
+    "styleguide": "vue-styleguidist server",
+    "styleguide:build": "vue-styleguidist build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lib": "vue-cli-service build --target lib --name oui --dest lib packages/index.js"
@@ -21,6 +23,7 @@
     "@vue/cli-service": "^3.5.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
+    "vue-styleguidist": "^3.25.0",
     "vue-template-compiler": "^2.5.21"
   }
 }
