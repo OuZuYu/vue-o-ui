@@ -1,3 +1,4 @@
+dsafadsfasdf
 ```
 <template>
   <div>
@@ -13,9 +14,9 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style>
 .icon-item {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 </style>
 ```
