@@ -38,26 +38,52 @@ export default {
     name: 'OLoading',
 
     props: {
+        /**
+         * @model
+         */
         value: Boolean,
 
+        /**
+         * 距顶部像素
+         */
         top: String,
 
+        /**
+         * 距底部像素
+         */
         bottom: String,
 
+        /**
+         * 距右边像素
+         */
         right: String,
 
+        /**
+         * 距右边像素
+         */
         left: String,
 
+        /**
+         * 距右边像素
+         * `black, white`
+         */
         color: { // black white
             type: String,
             default: 'white'
         },
 
+        /**
+         * loading 图标大小
+         * `small, medium, large`
+         */
         size: { // small medium large
             type: String,
             default: 'small'
         },
 
+        /**
+         * 是否全屏 loading
+         */
         fullscreen: {
             type: Boolean,
             default: false
