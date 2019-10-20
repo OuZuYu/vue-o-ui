@@ -47,14 +47,29 @@ export default {
     },
 
     props: {
+        /**
+         * @model
+         */
         value: {
             required: true
         },
+
+        /**
+         * 标题
+         */
         title: String,
+
+        /**
+         * 标题宽度
+         */
         titleWidth: {
             type: String,
             default: '80'
         },
+
+        /**
+         * 是否默认展开
+         */
         expand: {
             type: Boolean,
             default: false
@@ -72,7 +87,13 @@ export default {
     methods: {
         handleOptionSelect (value) {
             this.$emit('input', value);
-            if (this.value !== value) this.$emit('change', value);
+            if (this.value !== value) {
+                /**
+                 * 选项改变
+                 * @property {value,string} value - 已选中的选项的值
+                 */
+                this.$emit('change', value);
+            }
         },
 
         setOptionListHeight () {
