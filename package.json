@@ -14,15 +14,12 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "highlight.js": "^9.15.6",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-service": "^3.5.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.1.0",
     "vue-styleguidist": "^3.25.0",
     "vue-template-compiler": "^2.5.21"
   }
