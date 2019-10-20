@@ -25,23 +25,41 @@ export default {
     name: 'OPopup',
 
     props: {
+        /**
+         * 是否显示弹框
+         */
         visible: Boolean,
+        /**
+         * 是否点击蒙层关闭
+         */
         closeOnClickModal: {
             type: Boolean,
             default: false
         },
+        /**
+         * 弹框标题
+         */
         title: {
             type: String,
             default: ''
         },
+        /**
+         * 弹框宽度
+         */
         width: {
             type: String,
             default: '600'
         },
+        /**
+         * 标题位置
+         */
         titleLocation: { // left center
             type: String,
             default: 'left'
         },
+        /**
+         * z-index
+         */
         zIndex: {
             type: String,
             default: '2999'
@@ -63,6 +81,9 @@ export default {
     },
     mounted () {
         if (this.visible) {
+            /**
+             * 打开弹框时
+             */
             this.$emit('open');
             this.rendered = true;
         }
@@ -76,6 +97,9 @@ export default {
                     this.$refs.popup.scrollTop = 0;
                 });
             } else {
+                /**
+                 * 关闭弹框时
+                 */
                 this.$emit('close');
             }
         }
