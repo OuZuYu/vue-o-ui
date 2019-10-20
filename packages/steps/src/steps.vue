@@ -16,27 +16,42 @@ export default {
     name: 'OSteps',
 
     props: {
+        /**
+         * @model
+         */
         value: {
             type: Number,
             required: true,
             default: 0
         },
 
+        /**
+         * 上一步
+         */
         onPrev: {
             type: Function,
             default() {},
         },
 
+        /**
+         * 下一步
+         */
         onNext: {
             type: Function,
             default() {},
         },
 
+        /**
+         * 上一步按钮文字
+         */
         prevText: {
           type: String,
           default: '上一步',
         },
 
+        /**
+         * 下一步按钮文字
+         */
         nextText: {
           type: String,
           default: '下一步',
