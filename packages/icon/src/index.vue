@@ -3,48 +3,49 @@
 </template>
 
 <script>
-  /**
-   * 图标组件
-   * @displayName OIcon
-   */
-  export default {
-    name: 'OIcon',
+/**
+ * 图标组件
+ * @displayName OIcon
+ */
+export default {
+  name: "OIcon",
 
-    props: {
+  props: {
+    /**
+     * select框的placeholder
+     */
+    name: String
+  },
+
+  methods: {
+    handleClick(e) {
       /**
-       * select框的placeholder
+       * 点击事件
+       *
+       * @type {function}
        */
-      name: String
-    },
-
-    methods: {
-      handleClick (e) {
-        /**
-         * 点击事件
-         *
-         * @type {function}
-         */
-        this.$emit('click', e);
-      }
+      this.$emit("click", e);
     }
-  };
+  }
+};
 </script>
 
 <style lang="scss" scoped>
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?qsbdgs');
-  src:  url('fonts/icomoon.eot?qsbdgs#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?qsbdgs') format('truetype'),
-    url('fonts/icomoon.woff?qsbdgs') format('woff'),
-    url('fonts/icomoon.svg?qsbdgs#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?qsbdgs");
+  src: url("fonts/icomoon.eot?qsbdgs#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?qsbdgs") format("truetype"),
+    url("fonts/icomoon.woff?qsbdgs") format("woff"),
+    url("fonts/icomoon.svg?qsbdgs#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
