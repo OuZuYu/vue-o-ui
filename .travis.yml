@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - lts/*
+install:
+  - yarn
+script:
+  - yarn styleguide:build
+cache: yarn
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  local-dir: lib
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: gh-pages
