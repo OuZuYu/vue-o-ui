@@ -13,4 +13,4 @@ deploy:
   local-dir: styleguide
   github-token: $GITHUB_TOKEN
   on:
-    branch: gh-pages
+    branch: master
