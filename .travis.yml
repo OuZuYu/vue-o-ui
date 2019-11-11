@@ -10,7 +10,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
-  local-dir: lib
+  local-dir: styleguide
   github-token: $GITHUB_TOKEN
   on:
     branch: gh-pages
